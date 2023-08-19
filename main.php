@@ -24,6 +24,15 @@
             border-left: solid 10px #b8cce4;
             background: #dbe5f1 url(./imagenes/iconos/bg_corner.gif) top right no-repeat;
         }
+        #siteinfo-legal {
+            display: flex;
+            border-right: ridge;
+        }
+        #siteinfo a {
+            color: #0600e6;
+            background: url(./imagenes/iconos/external.gif) right no-repeat;
+            padding-right: 13px;
+        }
         
     </style>
 </head>
@@ -50,11 +59,23 @@
         <div class="col-6"><p class="text-danger font-weight-bold">Get Started</p></div>
     </div>
     <div class="row ">
-        <div class="col-6 border-bottom">
+        <div class="col-6 ">
             <p class="">The first step in applying for a U.S. nonimmigrant visa is to complete your application. It takes approximately 90 minutes to do this. After you submit your application, you can move on to the next steps such as scheduling your interview.</p>
      
-            <p class="text-primary">Important: Before You Start</p>
+            <p class="text-primary border-bottom">Important: Before You Start</p>
+            <ol id="start-checklist">                    
+                <li>
+                Learn about <a href="https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/all-visa-categories.html"> Types of Visas.</a>
+                </li>
+                <li><strong>This website is designed to be accessed using Chrome, Edge, or Firefox only.</strong></li>
+                <li> <a href="https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/forms/ds-160-online-nonimmigrant-visa-application/ds-160-faqs.html#doclist">Gather your documents.</a></li>
+                <li>Review the <a href="https://ceac.state.gov/GenNIV/Common/Instructions.aspx">instructions</a> and <a href="https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/forms/ds-160-online-nonimmigrant-visa-application/ds-160-faqs.html">FAQ</a>.</li>
+            </ol>
+            <p class="border-bottom">Notes:</p>
+            <p>Other people can assist you with your visa application. Note that under U.S. law (22 C.F.R. 41.103) you must electronically sign and submit your own application unless you qualify for an exemption. Even if someone else helped you complete the application, you (the applicant) must click the “Sign Application” button, or your application may not be accepted.</p>
+            <p>**Please be patient as you use this form. Download times may vary depending on your internet connection speed.**</p>
         </div>
+        
         <div class="col-6 d-flex flex-column">
             <label for="languaje">Select a location where you will be applying for this visa</label>
             <div class="d-flex p-1 align-items-center">
@@ -303,9 +324,37 @@
                     </span>
                 </div>
             </div>
+            <div class="m-3 border-bottom">
+                <p>Additional Information</p>
+            </div>
+            <div class="m-2">
+                <p>» <strong> Write down the Application </strong> ID displayed on the top right hand corner of the page. If you close your browser window, you will need your ID to access your application again.</p>
+                <p>» <strong> Save your application frequently. </strong>  The system will time out after 20 minutes of inactivity, and you will lose all unsaved information.</p>
+                <p>» Read more about U.S. visas at <a href="travel.state.gov"> travel.state.gov.</a></p>
+                <p>»  Visit the website of the <a href="https://www.usembassy.gov/"> U.S. Embassy or Consulate.</a> </p>
+
+            </div>
 
                                        
 
+        </div>
+    </div>
+    <div class="row mb-5" id="siteinfo">
+        <div class="col-2" id="siteinfo-legal">
+            <img src="./imagenes/iconos/bg-siteinfo-legal.gif" alt="">
+        </div>
+        <div class="col-10">
+        <p>This site is managed by the Bureau of Consular Affairs, U.S. Department of State. External links to other Internet sites should not be construed as an endorsement of the views contained therein.</p>
+        <span id="ctl00_siteInfo_hplCopyrightToolTip" class="tooltip_text" tip = &#39;&#39;><a id="ctl00_siteInfo_hplCopyright" tabindex="6010" href="https://ceac.state.gov/genniv/Common/Copyright.aspx" target="_ceac">Copyright Information</a></span>
+        &nbsp;
+        <span id="ctl00_siteInfo_hplDisclaimersToolTip" class="tooltip_text" tip = &#39;&#39;><a id="ctl00_siteInfo_hplDisclaimers" tabindex="6020" href="https://ceac.state.gov/ceac/Common/Disclaimer.aspx" target="_ceac">Disclaimers</a></span>
+        &nbsp;
+        <span id="ctl00_siteInfo_hplPaperworkReductionToolTip" class="tooltip_text" tip = &#39;&#39;><a id="ctl00_siteInfo_hplPaperworkReduction" tabindex="6030" href="https://ceac.state.gov/genniv/common/paperworkreduction.aspx" target="_ceac">Paperwork Reduction Act</a></span>
+        &nbsp;
+        <span id="ctl00_siteInfo_hplFbiPrivacyActToolTip" class="tooltip_text" tip = &#39;&#39;><a id="ctl00_siteInfo_hplFbiPrivacyAct" tabindex="6040" href="https://ceac.state.gov/genniv/common/fbiprivacyact.aspx" target="_ceac">FBI Privacy Act</a></span>
+        <span style="float:right;">
+            <span id="ctl00_siteInfo_lblIP" tabindex="6050" style="background-color:LightGrey;font-size:0.6em;">(226)</span>
+        </span>
         </div>
     </div>
 </div> 
