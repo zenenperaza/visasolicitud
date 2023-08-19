@@ -24,14 +24,26 @@
             border-left: solid 10px #b8cce4;
             background: #dbe5f1 url(./imagenes/iconos/bg_corner.gif) top right no-repeat;
         }
-        #siteinfo-legal {
-            display: flex;
-            border-right: ridge;
+        #siteinfo {
+            background: #ddd url(./imagenes/iconos/bg-siteinfo.gif) top left repeat-x;
+            height: 80px;
+            position: relative;
+            z-index: 100;
+            font-size: 10px;
         }
         #siteinfo a {
             color: #0600e6;
             background: url(./imagenes/iconos/external.gif) right no-repeat;
             padding-right: 13px;
+        }
+        #siteinfo-legal {
+            display: flex;
+            border-right: ridge;
+            justify-content: center;
+            align-items: center;
+        }
+        #siteinfo p {
+            font-size: 11px;
         }
         
     </style>
@@ -343,8 +355,8 @@
         <div class="col-2" id="siteinfo-legal">
             <img src="./imagenes/iconos/bg-siteinfo-legal.gif" alt="">
         </div>
-        <div class="col-10">
-        <p>This site is managed by the Bureau of Consular Affairs, U.S. Department of State. External links to other Internet sites should not be construed as an endorsement of the views contained therein.</p>
+        <div class="col-10 align-self-end">
+        <p class="m-0">This site is managed by the Bureau of Consular Affairs, U.S. Department of State. External links to other Internet sites should not be construed as an endorsement of the views contained therein.</p>
         <span id="ctl00_siteInfo_hplCopyrightToolTip" class="tooltip_text" tip = &#39;&#39;><a id="ctl00_siteInfo_hplCopyright" tabindex="6010" href="https://ceac.state.gov/genniv/Common/Copyright.aspx" target="_ceac">Copyright Information</a></span>
         &nbsp;
         <span id="ctl00_siteInfo_hplDisclaimersToolTip" class="tooltip_text" tip = &#39;&#39;><a id="ctl00_siteInfo_hplDisclaimers" tabindex="6020" href="https://ceac.state.gov/ceac/Common/Disclaimer.aspx" target="_ceac">Disclaimers</a></span>
