@@ -4,11 +4,18 @@
 <head>
     <?php include("inclusion/head.php"); ?>
     <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            background-color: #ddd;
+        }
        
         .submit {
             float: right;
-            width: 214px;
-            color: white;
+            width: 230px;
+            color: white;   
+            font-size: 12px;
             padding: 5px 30px 5px 0px;
             text-align: right;
             border-left: solid 1px #a21a1e;
@@ -45,6 +52,45 @@
         #siteinfo p {
             font-size: 11px;
         }
+        .container {
+            max-width: 760px;
+            background-color: #fff;
+            margin-left: 0px;
+        }
+        .banner{
+            background: url(./imagenes/logo/banner.png) top left no-repeat;
+            color: white;
+            height: 80px;
+            display: flex;
+            align-items: start;
+            text-align: -webkit-right;
+        }
+        .language {
+            display: flex;
+            align-self: start;
+            place-content: flex-end;
+            font-size: smaller;
+            margin: 17px 0px;
+        }
+        select#language {
+            border-radius: 0px;
+            padding: 0px;
+            margin: 5px 5px;
+            width: 185px!important;
+            min-height: 20px;
+            text-transform: uppercase;
+        }
+        .text-apply {
+            color: #1c2960;
+            font: normal 24px Times, serif;
+        }
+        .text-online {
+            font: normal 16px Times, serif;
+            color: #881502;
+        }
+        
+        
+        
         
     </style>
 </head>
@@ -52,19 +98,47 @@
 <body>
     <!-- Body Inner -->
     <div class="body-inner">
-    <?php include("inclusion/topbar.php"); ?>
-    <?php include("inclusion/menu.php"); ?>
     <!-- CONTENIDO -->
 <div class="container">
-    <div class="row ">
-    <img src="./imagenes/logo/banner.png" alt="" class="img-fluid">
+    <div class="row banner">
+    <div class="language">
+        
+        <label for="language" id="">Select Tooltip Language</label>   
+        <select name="" class="form-control" id="language" style="font-size:8pt;width:190px;">
+            <option selected="selected" value="en-US">English</option>
+            <option value="ar-EG">العربية (Arabic)</option>
+            <option value="bn-BD">বাংলা (Bangla)</option>
+            <option value="zh-CN">中文(简体）(Chinese-Simplified) </option>
+            <option value="zh-TW">中文(繁體）(Chinese-Traditional) </option>
+            <option value="fr-FR">Français (French)</option>
+            <option value="de-DE">Deutsch (German)</option>
+            <option value="he-IL">עברית (Hebrew)</option>
+            <option value="hi-IN">हिन्दी (Hindi)</option>
+            <option value="id-ID">Indonesia (Indonesian)</option>
+            <option value="it-IT">Italiano (Italian)</option>
+            <option value="ja-JP">日本語 (Japanese)</option>
+            <option value="ko-KR">한국어 (Korean)</option>
+            <option value="sr-Latn-CS">Crnogorski (Montenegrin(Latin))</option>
+            <option value="fa-IR">فارسی (Persian(Farsi))</option>
+            <option value="pl-PL">Polski (Polish)</option>
+            <option value="pt-BR">Português (Portuguese)</option>
+            <option value="ro-RO">Română (Romanian)</option>
+            <option value="ru-RU">Русский (Russian)</option>
+            <option value="es-MX">Español (Spanish)</option>
+            <option value="th-TH">ภาษาไทย (Thai)</option>
+            <option value="tr-TR">Türkçe (Turkish)</option>
+            <option value="ur-PK">اردو (Urdu)</option>
+            <option value="vi-VN">Việt (Vietnamese)</option>
+        </select>
+
+    </div>
     </div>
     <div class="row mt-5 border-bottom">
-        <h4 class="text-danger">Online Nonimmigrant Visa Application (DS-160)</h4>
+        <h4 class="text-online">Online Nonimmigrant Visa Application (DS-160)</h4>
     </div>
     <div class="row">
-        <div class="col-6 py-4 d-flex justify-content-start"><h3 class="text-info">Apply For a Nonimmigrant Visa</h3></div>
-        <div class="col-6 mr-1 py-3 d-flex justify-content-end "><button type="button" class="btn btn-lg btn-info rounded-0 py-0">FAQs</button></div>
+        <div class="col-8 py-4 d-flex justify-content-start"><h3 class="text-apply">Apply For a Nonimmigrant Visa</h3></div>
+        <div class="col-4 mr-1 py-3 d-flex justify-content-end "><button type="button" class="btn btn-lg btn-info rounded-0 py-0">FAQs</button></div>
     </div>
     <div class="row border-bottom">
         <div class="col-6"><p class="text-danger font-weight-bold">Welcome!</p></div>
