@@ -9,6 +9,7 @@
             margin: 0;
             font-family: Verdana, Arial, Helvetica, sans-serif;
             background-color: #ddd;
+            font-size: 11px;
         }
        
         .submit {
@@ -88,9 +89,43 @@
             font: normal 16px Times, serif;
             color: #881502;
         }
-        
-        
-        
+        .faqs {
+            color: Navy;
+            background: #fff url(./imagenes/iconos/bg_button.gif) bottom repeat-x;
+            border: solid 1px #b0c4dc;
+            padding: 3px 3px;
+            width: 105px;
+            height: 25px;
+            text-align: center;
+            text-transform: none;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        div.language-panel {
+            border-top: solid 5px #a7b3cd;
+            border-bottom: solid 1px #d9e3ec;
+            padding: 5px 0 0 10px;
+            margin: 0 0;
+            background: #e1e5ee url(./imagenes/iconos/bg_language.jpg) 0px 20px no-repeat;
+        }
+        div.toggle-trigger {
+            float: right;
+            padding-right: 10px;
+            margin-top: -1px;
+            border-top: solid 1px #d9e3ec;
+        }
+        .getting-started {
+            color: #891300;
+            font: bold 12px Iimes, serif;
+        }
+        a#ctl00_SiteContentPlaceHolder_ucCultures_lnkToolTipHelp {
+            text-decoration: none;
+            color: #131c44;
+            font-size: small;
+        }
         
     </style>
 </head>
@@ -138,9 +173,96 @@
     </div>
     <div class="row">
         <div class="col-8 py-4 d-flex justify-content-start"><h3 class="text-apply">Apply For a Nonimmigrant Visa</h3></div>
-        <div class="col-4 mr-1 py-3 d-flex justify-content-end "><button type="button" class="btn btn-lg btn-info rounded-0 py-0">FAQs</button></div>
+        <div class="col-4 mr-1 py-3 d-flex justify-content-end "><button type="button" class="faqs">FAQs</button></div>
     </div>
-    <div class="row border-bottom">
+    <div class="row">
+    <div id="ctl00_SiteContentPlaceHolder_ucCultures_updConfirm">
+		  
+          <div id="" style="border: 0px; margin: 0px; padding: 0px; overflow-y: hidden; visibility: visible; height: 59px;" class=""><div id="ctl00_SiteContentPlaceHolder_ucCultures_pnlLanguages" style="overflow-x: hidden; visibility: visible; height: auto;">
+                 
+              <div class="toggle-trigger" style="cursor:hand;">
+                  <img id="" src="./imagenes/iconos/icon_roll_up.png" style="border-width:0px;">
+              </div>
+              <div class="language-panel" id="languagePanel">
+                  <h4 id="languagePanelHeader">
+                      <span id="ctl00_SiteContentPlaceHolder_ucCultures_lblToolTip" class="getting-started" onmousemove="widetip=false; tip='<%= getLocalResource(\'lblToolTip.ToolTip\') %>'; delayToolTip(event,tip,widetip,0,-20);return false" onmouseout="hideToolTip()">Tooltip Language:</span>
+                      <span id="ctl00_SiteContentPlaceHolder_ucCultures_lblSelectedLang">English</span>
+                      &nbsp;&nbsp;&nbsp;
+                      <a id="ctl00_SiteContentPlaceHolder_ucCultures_lnkToolTipHelp" href="common/tooltiphelp.aspx" target="_blank" style="text-decoration:underline;">[View Tool Tip Help]</a>
+                      <div style="margin-top:3px;" id="instructionsDiv">
+                          <span id="ctl00_SiteContentPlaceHolder_ucCultures_lblInstructions" style="font-weight:normal; color:#9e0b0f; font-size:14px;">Most of this application has been translated.  To see the translation point your mouse over any sentence on the page.</span>
+                      </div>
+                  </h4> 
+                  <table id="ctl00_SiteContentPlaceHolder_ucCultures_gridLanguages" cellspacing="0" border="0" style="border-collapse:collapse;">
+                  <tbody><tr>
+                      <td>
+                          <input type="image" name="ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl00$btnLanguage" id="ctl00_SiteContentPlaceHolder_ucCultures_gridLanguages_ctl00_btnLanguage" title="English" onfocus="return ValidNavigation();" src="_res/img/culture/en-US.gif" onclick="syncLanguageSelections2('en-US','ctl00_ddlLanguage');WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl00$btnLanguage&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="background-color:Transparent;height:25px;width:100px;border-width:0px;">                 
+                      </td><td>
+                          <input type="image" name="ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl04$btnLanguage" id="ctl00_SiteContentPlaceHolder_ucCultures_gridLanguages_ctl04_btnLanguage" title="Chinese" onfocus="return ValidNavigation();" src="_res/img/culture/zh-TW.gif" onclick="syncLanguageSelections2('zh-TW','ctl00_ddlLanguage');WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl04$btnLanguage&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="background-color:Transparent;height:25px;width:100px;border-width:0px;">                 
+                      </td><td>
+                          <input type="image" name="ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl08$btnLanguage" id="ctl00_SiteContentPlaceHolder_ucCultures_gridLanguages_ctl08_btnLanguage" title="Hindi" onfocus="return ValidNavigation();" src="_res/img/culture/hi-IN.gif" onclick="syncLanguageSelections2('hi-IN','ctl00_ddlLanguage');WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl08$btnLanguage&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="background-color:Transparent;height:25px;width:100px;border-width:0px;">                 
+                      </td><td>
+                          <input type="image" name="ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl12$btnLanguage" id="ctl00_SiteContentPlaceHolder_ucCultures_gridLanguages_ctl12_btnLanguage" title="Korean" onfocus="return ValidNavigation();" src="_res/img/culture/ko-KR.gif" onclick="syncLanguageSelections2('ko-KR','ctl00_ddlLanguage');WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl12$btnLanguage&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="background-color:Transparent;height:25px;width:100px;border-width:0px;">                 
+                      </td><td>
+                          <input type="image" name="ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl16$btnLanguage" id="ctl00_SiteContentPlaceHolder_ucCultures_gridLanguages_ctl16_btnLanguage" title="Portuguese" onfocus="return ValidNavigation();" src="_res/img/culture/pt-BR.gif" onclick="syncLanguageSelections2('pt-BR','ctl00_ddlLanguage');WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl16$btnLanguage&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="background-color:Transparent;height:25px;width:100px;border-width:0px;">                 
+                      </td><td>
+                          <input type="image" name="ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl20$btnLanguage" id="ctl00_SiteContentPlaceHolder_ucCultures_gridLanguages_ctl20_btnLanguage" title="Thai" onfocus="return ValidNavigation();" src="_res/img/culture/th-TH.gif" onclick="syncLanguageSelections2('th-TH','ctl00_ddlLanguage');WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl20$btnLanguage&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="background-color:Transparent;height:25px;width:100px;border-width:0px;">                 
+                      </td>
+                  </tr><tr>
+                      <td>
+                          <input type="image" name="ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl01$btnLanguage" id="ctl00_SiteContentPlaceHolder_ucCultures_gridLanguages_ctl01_btnLanguage" title="Arabic" onfocus="return ValidNavigation();" src="_res/img/culture/ar-EG.gif" onclick="syncLanguageSelections2('ar-EG','ctl00_ddlLanguage');WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl01$btnLanguage&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="background-color:Transparent;height:25px;width:100px;border-width:0px;">                 
+                      </td><td>
+                          <input type="image" name="ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl05$btnLanguage" id="ctl00_SiteContentPlaceHolder_ucCultures_gridLanguages_ctl05_btnLanguage" title="French" onfocus="return ValidNavigation();" src="_res/img/culture/fr-FR.gif" onclick="syncLanguageSelections2('fr-FR','ctl00_ddlLanguage');WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl05$btnLanguage&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="background-color:Transparent;height:25px;width:100px;border-width:0px;">                 
+                      </td><td>
+                          <input type="image" name="ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl09$btnLanguage" id="ctl00_SiteContentPlaceHolder_ucCultures_gridLanguages_ctl09_btnLanguage" title="Indonesian" onfocus="return ValidNavigation();" src="_res/img/culture/id-ID.gif" onclick="syncLanguageSelections2('id-ID','ctl00_ddlLanguage');WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl09$btnLanguage&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="background-color:Transparent;height:25px;width:100px;border-width:0px;">                 
+                      </td><td>
+                          <input type="image" name="ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl13$btnLanguage" id="ctl00_SiteContentPlaceHolder_ucCultures_gridLanguages_ctl13_btnLanguage" title="Montenegrin (Latin)" onfocus="return ValidNavigation();" src="_res/img/culture/sr-Latn-CS.gif" onclick="syncLanguageSelections2('sr-Latn-CS','ctl00_ddlLanguage');WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl13$btnLanguage&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="background-color:Transparent;height:25px;width:100px;border-width:0px;">                 
+                      </td><td>
+                          <input type="image" name="ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl17$btnLanguage" id="ctl00_SiteContentPlaceHolder_ucCultures_gridLanguages_ctl17_btnLanguage" title="Romanian" onfocus="return ValidNavigation();" src="_res/img/culture/ro-RO.gif" onclick="syncLanguageSelections2('ro-RO','ctl00_ddlLanguage');WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl17$btnLanguage&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="background-color:Transparent;height:25px;width:100px;border-width:0px;">                 
+                      </td><td>
+                          <input type="image" name="ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl21$btnLanguage" id="ctl00_SiteContentPlaceHolder_ucCultures_gridLanguages_ctl21_btnLanguage" title="Turkish" onfocus="return ValidNavigation();" src="_res/img/culture/tr-TR.gif" onclick="syncLanguageSelections2('tr-TR','ctl00_ddlLanguage');WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl21$btnLanguage&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="background-color:Transparent;height:25px;width:100px;border-width:0px;">                 
+                      </td>
+                  </tr><tr>
+                      <td>
+                          <input type="image" name="ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl02$btnLanguage" id="ctl00_SiteContentPlaceHolder_ucCultures_gridLanguages_ctl02_btnLanguage" title="Bengali" onfocus="return ValidNavigation();" src="_res/img/culture/bn-BD.gif" onclick="syncLanguageSelections2('bn-BD','ctl00_ddlLanguage');WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl02$btnLanguage&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="background-color:Transparent;height:25px;width:100px;border-width:0px;">                 
+                      </td><td>
+                          <input type="image" name="ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl06$btnLanguage" id="ctl00_SiteContentPlaceHolder_ucCultures_gridLanguages_ctl06_btnLanguage" title="German" onfocus="return ValidNavigation();" src="_res/img/culture/de-DE.gif" onclick="syncLanguageSelections2('de-DE','ctl00_ddlLanguage');WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl06$btnLanguage&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="background-color:Transparent;height:25px;width:100px;border-width:0px;">                 
+                      </td><td>
+                          <input type="image" name="ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl10$btnLanguage" id="ctl00_SiteContentPlaceHolder_ucCultures_gridLanguages_ctl10_btnLanguage" title="Italian" onfocus="return ValidNavigation();" src="_res/img/culture/it-IT.gif" onclick="syncLanguageSelections2('it-IT','ctl00_ddlLanguage');WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl10$btnLanguage&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="background-color:Transparent;height:25px;width:100px;border-width:0px;">                 
+                      </td><td>
+                          <input type="image" name="ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl14$btnLanguage" id="ctl00_SiteContentPlaceHolder_ucCultures_gridLanguages_ctl14_btnLanguage" title="Persian (Farsi)" onfocus="return ValidNavigation();" src="_res/img/culture/fa-IR.gif" onclick="syncLanguageSelections2('fa-IR','ctl00_ddlLanguage');WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl14$btnLanguage&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="background-color:Transparent;height:25px;width:100px;border-width:0px;">                 
+                      </td><td>
+                          <input type="image" name="ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl18$btnLanguage" id="ctl00_SiteContentPlaceHolder_ucCultures_gridLanguages_ctl18_btnLanguage" title="Russian" onfocus="return ValidNavigation();" src="_res/img/culture/ru-RU.gif" onclick="syncLanguageSelections2('ru-RU','ctl00_ddlLanguage');WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl18$btnLanguage&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="background-color:Transparent;height:25px;width:100px;border-width:0px;">                 
+                      </td><td>
+                          <input type="image" name="ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl22$btnLanguage" id="ctl00_SiteContentPlaceHolder_ucCultures_gridLanguages_ctl22_btnLanguage" title="Urdu" onfocus="return ValidNavigation();" src="_res/img/culture/ur-PK.gif" onclick="syncLanguageSelections2('ur-PK','ctl00_ddlLanguage');WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl22$btnLanguage&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="background-color:Transparent;height:25px;width:100px;border-width:0px;">                 
+                      </td>
+                  </tr><tr>
+                      <td>
+                          <input type="image" name="ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl03$btnLanguage" id="ctl00_SiteContentPlaceHolder_ucCultures_gridLanguages_ctl03_btnLanguage" title="Chinese" onfocus="return ValidNavigation();" src="_res/img/culture/zh-CN.gif" onclick="syncLanguageSelections2('zh-CN','ctl00_ddlLanguage');WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl03$btnLanguage&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="background-color:Transparent;height:25px;width:100px;border-width:0px;">                 
+                      </td><td>
+                          <input type="image" name="ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl07$btnLanguage" id="ctl00_SiteContentPlaceHolder_ucCultures_gridLanguages_ctl07_btnLanguage" title="Hebrew" onfocus="return ValidNavigation();" src="_res/img/culture/he-IL.gif" onclick="syncLanguageSelections2('he-IL','ctl00_ddlLanguage');WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl07$btnLanguage&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="background-color:Transparent;height:25px;width:100px;border-width:0px;">                 
+                      </td><td>
+                          <input type="image" name="ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl11$btnLanguage" id="ctl00_SiteContentPlaceHolder_ucCultures_gridLanguages_ctl11_btnLanguage" title="Japanese" onfocus="return ValidNavigation();" src="_res/img/culture/ja-JP.gif" onclick="syncLanguageSelections2('ja-JP','ctl00_ddlLanguage');WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl11$btnLanguage&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="background-color:Transparent;height:25px;width:100px;border-width:0px;">                 
+                      </td><td>
+                          <input type="image" name="ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl15$btnLanguage" id="ctl00_SiteContentPlaceHolder_ucCultures_gridLanguages_ctl15_btnLanguage" title="Polish" onfocus="return ValidNavigation();" src="_res/img/culture/pl-PL.gif" onclick="syncLanguageSelections2('pl-PL','ctl00_ddlLanguage');WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl15$btnLanguage&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="background-color:Transparent;height:25px;width:100px;border-width:0px;">                 
+                      </td><td>
+                          <input type="image" name="ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl19$btnLanguage" id="ctl00_SiteContentPlaceHolder_ucCultures_gridLanguages_ctl19_btnLanguage" title="Spanish" onfocus="return ValidNavigation();" src="_res/img/culture/es-MX.gif" onclick="syncLanguageSelections2('es-MX','ctl00_ddlLanguage');WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl19$btnLanguage&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="background-color:Transparent;height:25px;width:100px;border-width:0px;">                 
+                      </td><td>
+                          <input type="image" name="ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl23$btnLanguage" id="ctl00_SiteContentPlaceHolder_ucCultures_gridLanguages_ctl23_btnLanguage" title="Vietnamese" onfocus="return ValidNavigation();" src="_res/img/culture/vi-VN.gif" onclick="syncLanguageSelections2('vi-VN','ctl00_ddlLanguage');WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SiteContentPlaceHolder$ucCultures$gridLanguages$ctl23$btnLanguage&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="background-color:Transparent;height:25px;width:100px;border-width:0px;">                 
+                      </td>
+                  </tr>
+              </tbody></table>
+              </div>
+          
+          </div></div>                
+          
+          <input type="hidden" name="ctl00$SiteContentPlaceHolder$ucCultures$cpeLanguages_ClientState" id="ctl00_SiteContentPlaceHolder_ucCultures_cpeLanguages_ClientState" value="true">
+          
+          
+      
+      </div>
+    </div>
+    <div class="row border-bottom" style="margin-top:5px">
         <div class="col-6"><p class="text-danger font-weight-bold">Welcome!</p></div>
         <div class="col-6"><p class="text-danger font-weight-bold">Get Started</p></div>
     </div>
